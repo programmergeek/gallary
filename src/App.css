@@ -10,7 +10,7 @@
 
 @media screen and (min-width: 1024px) {
   #container {
-    grid-template-rows: 50px 90vh 5vh 1fr;
+    grid-template-columns: repeat(6, 1fr);
     grid-template-areas:
       "nav nav nav nav nav nav"
       "text-area text-area text-area image image image"
@@ -26,6 +26,20 @@
 #image {
   background-color: green;
   grid-area: image;
+  display: flex;
+  justify-content: center;
+}
+
+#main-image {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  max-width: 90%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 #image-list {
@@ -38,6 +52,10 @@
   grid-area: text-area;
 }
 
-* {
+div {
   width: 100%;
+}
+
+.position-relative {
+  position: relative;
 }
