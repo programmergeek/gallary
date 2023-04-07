@@ -72,7 +72,13 @@ const FocusImage: React.FC<BoxProps> = ({ ...props }) => {
     >
       <Box
         sx={{
-          width: "90%",
+          width: {
+            xs: "90%",
+            sm: "75%",
+            md: "90%",
+            lg: "75%",
+            xl: "60%",
+          },
           py: "10px",
           position: "absolute",
           transform: "translate(-50%, -50%)",
