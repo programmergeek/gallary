@@ -1,22 +1,22 @@
-import { Container } from "@mui/material";
 import "./App.css";
+import { Layout } from "./Components";
 
 function App() {
   return (
-    <div id="container">
-      <div id="nav"></div>
-      <div id="image">
-        <div className="position-relative">
-          <img id="main-image" src="https://picsum.photos/1080/1080" alt="" />
-        </div>
-      </div>
-      <div id="image-list"></div>
-      <div id="text">
-        <p id="title"></p>
-        <p id="description"></p>
-        <div id="social-links"></div>
-      </div>
-    </div>
+    <Layout>
+      <Layout.Navbar
+        sx={{ background: "black", height: 100, width: "100%" }}
+      ></Layout.Navbar>
+      <Layout.Image
+        sx={{ background: "blue", height: 100, width: "100%" }}
+      ></Layout.Image>
+      <Layout.Text
+        sx={{ background: "green", height: 100, width: "100%" }}
+      ></Layout.Text>
+      <Layout.PreviewImages
+        sx={{ background: "red", height: 100, width: "100%" }}
+      ></Layout.PreviewImages>
+    </Layout>
   );
 }
 
