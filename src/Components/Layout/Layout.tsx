@@ -47,13 +47,22 @@ const TextBlock: React.FC<BoxProps> = ({ ...props }) => {
     <Box
       sx={{
         gridArea: "text",
-        margin: { xs: 1, sm: 4, md: 2 },
-        mx: { sm: 5 },
         width: "95%",
+        position: "relative",
+        minHeight: "50vh",
         ...props.sx,
       }}
     >
-      {props.children}
+      <span
+        style={{
+          position: "absolute",
+          transform: "translate(-30%, -50%)",
+          top: "50%",
+          left: "30%",
+        }}
+      >
+        {props.children}
+      </span>
     </Box>
   );
 };
