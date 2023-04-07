@@ -43,7 +43,19 @@ const Navbar: React.FC<BoxProps> = ({ ...props }) => {
 Layout.Navbar = Navbar;
 
 const TextBlock: React.FC<BoxProps> = ({ ...props }) => {
-  return <Box sx={{ gridArea: "text", ...props.sx }}></Box>;
+  return (
+    <Box
+      sx={{
+        gridArea: "text",
+        margin: { xs: 1, sm: 4, md: 2 },
+        mx: { sm: 5 },
+        width: "95%",
+        ...props.sx,
+      }}
+    >
+      {props.children}
+    </Box>
+  );
 };
 
 Layout.Text = TextBlock;
