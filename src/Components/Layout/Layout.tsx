@@ -49,7 +49,29 @@ const TextBlock: React.FC<BoxProps> = ({ ...props }) => {
 Layout.Text = TextBlock;
 
 const FocusImage: React.FC<BoxProps> = ({ ...props }) => {
-  return <Box sx={{ gridArea: "image", ...props.sx }}></Box>;
+  return (
+    <Box
+      sx={{
+        gridArea: "image",
+        height: { xs: "85vh" },
+        position: "relative",
+        ...props.sx,
+      }}
+    >
+      <Box
+        sx={{
+          width: "90%",
+          py: "10px",
+          position: "absolute",
+          transform: "translate(-50%, -50%)",
+          top: "50%",
+          left: "50%",
+        }}
+      >
+        {props.children}
+      </Box>
+    </Box>
+  );
 };
 
 Layout.Image = FocusImage;
