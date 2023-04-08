@@ -27,7 +27,7 @@ const layoutContainerCSS: SxProps = {
     md: `
     "header header header header header header"
     "text text text image image image"
-    "previewImages previewImages previewImages previewImages previewImages previewImages"
+    ". . previewImages previewImages . ."
   `,
   },
 };
@@ -104,7 +104,9 @@ const FocusImage: React.FC<BoxProps> = ({ ...props }) => {
 Layout.Image = FocusImage;
 
 const PreviewImages: React.FC<BoxProps> = ({ ...props }) => {
-  return <Box sx={{ gridArea: "previewImages", ...props.sx }}></Box>;
+  return (
+    <Box sx={{ gridArea: "previewImages", ...props.sx }}>{props.children}</Box>
+  );
 };
 
 Layout.PreviewImages = PreviewImages;

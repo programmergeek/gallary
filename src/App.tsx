@@ -1,6 +1,6 @@
-import { AppBar, Grid, Typography } from "@mui/material";
+import { AppBar, Grid, Typography, Box } from "@mui/material";
 import "./App.css";
-import { Layout } from "./Components";
+import { Layout, Carousel } from "./Components";
 
 function App() {
   return (
@@ -30,7 +30,55 @@ function App() {
           officiis optio!
         </Typography>
       </Layout.Text>
-      <Layout.PreviewImages></Layout.PreviewImages>
+      <Layout.PreviewImages>
+        <Carousel>
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+          <img src="https://picsum.photos/30/30" alt="" />
+        </Carousel>
+      </Layout.PreviewImages>
     </Layout>
   );
 }
